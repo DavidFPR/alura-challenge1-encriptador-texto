@@ -1,0 +1,120 @@
+/*  FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* VARIABLES */
+
+:root {
+    --color-primario: #008C00;
+    --color-secundario: #000000;
+    --color-resalte: #00FF00;
+}
+
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inconsolata", monospace;
+}
+
+body {
+    background-color: var(--color-secundario);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    color: var(--color-primario);
+}
+
+strong {
+    font-weight: 900;
+    color: var(--color-resalte);
+}
+
+/* HEADER */
+#header {
+    width: 10vw;
+    background-color: var(--color-secundario);
+}
+
+.logo {
+    height: 20vh;
+    width: auto;
+    margin-top: 5vh;
+    margin-left: 1vw;
+}
+
+/* ENTRADA */
+#entrada {
+    width: 60vw;
+    height: 85vh;
+    margin: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.entrada__area {
+    display: flex;
+    flex-direction: column;
+}
+
+#input {
+    background-color: black;
+    color: var(--color-resalte);
+    height: 70vh;
+    border: 2px solid var(--color-primario);
+    resize: none;
+    padding: 10px;
+    outline: none;
+    font-size: 1rem;
+    padding: 5%;
+}
+
+#input::placeholder {
+    color: var(--color-primario);
+}
+
+.entrada__info {
+    padding-top: 1.5%;
+}
+
+.entrada__area__botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.entrada__area__boton {
+    background-color: var(--color-secundario);
+    color: var(--color-resalte);
+    border: 2px solid var(--color-primario);
+    padding: 1%;
+    width: 300px;
+    font-size: 16px;
+}
+
+/* SALIDA */
+
+#salida {
+    background-color: var(--color-secundario);
+    width: 30vw;
+    border: 2px solid var(--color-primario);
+    height: 85vh;
+    margin: 5vh;
+    background-image: url(./assets/magnifying_glass.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#output {
+    color: var(--color-resalte);
+    text-align: center;
+    margin-top: 35%;
+}
+
+/* MEDIA QUERIES */
