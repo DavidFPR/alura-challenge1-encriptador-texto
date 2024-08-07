@@ -8,9 +8,9 @@
   </head>
   <body>
     <section id="header">
-      <div>
-        <img class="logo" src="./assets/New Project.png" alt="" />
-      </div>
+      <a href="https://aluracursos.com" class="header__logo-link">
+        <img class="header__logo" src="./assets/alura_logo.png" alt="Logo de Alura">
+      </a>
     </section>
     <section id="entrada">
       <div class="entrada__area">
@@ -18,16 +18,12 @@
         <p class="entrada__info"><strong>!</strong> Solo letras minúsculas y sin acentos</p>
       </div>
       <div class="entrada__area__botones">
-        <button class="entrada__area__boton">Encriptar</button>
-        <button class="entrada__area__boton">Desencriptar</button>
+        <button onclick="encriptarTexto()" id="botonEncriptar" class="entrada__area__boton">Encriptar</button>
+        <button onclick="desencriptarTexto()" id="botonDesencriptar" class="entrada__area__boton">Desencriptar</button>
     </section>
     <section id="salida">
-      <div class="salida__area">
-        <div id="output">
-          <h2>Ningún mensaje fue encontrado</h2>
-          <p>Ingresa el texto que deseas encriptar o desencriptar</p>
-        </div>
-      </div>
+        <textarea name="salida__texto" id="output" spellcheck="false"></textarea>
     </section>
+    <script src="./app.js"></script>
   </body>
 </html>
